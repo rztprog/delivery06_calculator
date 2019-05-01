@@ -1,3 +1,11 @@
+![calculator icon](./public/img/calc.png)
+
+# Calculator
+
+Do a calculator with the basics operations (+ modulo) with React Framework & Materialize Framework
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

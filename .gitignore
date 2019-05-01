@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore the temporary file
+*~
+
+# Ignore swap file
+*.swp
+*.swo
+
+# Ignore boilerplate version file
+versions.md

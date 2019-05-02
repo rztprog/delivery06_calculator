@@ -1,0 +1,51 @@
+.item-a {
+	grid-area: header;
+	background-color: #000;
+}
+
+.item-b {
+	grid-area: keyAc;
+}
+
+.item-c {
+	grid-area: keyPm;
+}
+
+.item-d {
+	grid-area: keyModulo;
+}
+
+.item-e {
+	grid-area: keyMin;	
+}
+
+.item-i {
+	grid-area: keyMulti;	
+}
+
+.item-m {
+	grid-area: keyPlus;	
+}
+
+.item-keyNum {
+	grid-area: keyNum;
+}
+
+
+.Calculator {
+	background-color: none;
+	display: grid;
+	font-size: 1.5em;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: repeat(4, 5em);
+	grid-template-rows: 6em repeat(5, 4em);
+	grid-gap: 5px 5px;
+	grid-template-areas:
+		"header header header header"
+		"keyAc keyPm keyModulo keyDiv"
+		"keyNum keyNum keyNum keyMulti"
+		"keyNum keyNum keyNum keyMin"
+		"keyNum keyNum keyNum keyPlus"
+		"keyNum keyNum keyNum keyEqual";
+}

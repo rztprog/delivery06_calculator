@@ -3,10 +3,28 @@ td {
 	height: 3em;
 }
 
+.Orange {
+	background-color: orange;
+	color: #fff;
+}
+
+.LightGrey {
+	background-color: #888;
+}
+
+.Grey {
+	background-color: #444;
+}
+
 .Head {
 	background-color: #000;
 	color: #fff;
 	height: 5em;
+}
+
+.Grey,
+.LightGrey {
+	cursor: pointer;
 }
 
 .Calculator {

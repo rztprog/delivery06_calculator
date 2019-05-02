@@ -5,27 +5,42 @@ class Calculator extends React.Component {
 	render() {
 		return (
 			<div className="Calculator">
-				<div className="item-a">0</div>
-				<div>AC</div>
-				<div>+-</div>
-				<div>%</div>
-				<div>/</div>
-				<div>7</div>
-				<div>8</div>
-				<div>9</div>
-				<div>*</div>
-				<div>4</div>
-				<div>5</div>
-				<div>6</div>
-				<div>-</div>
-				<div>1</div>
-				<div>2</div>
-				<div>3</div>
-				<div>+</div>
-				<div>0</div>
-				<div>0</div>
-				<div>,</div>
-				<div>=</div>
+			<table>
+			<tbody>
+			<tr className="Head">
+			<th colSpan="4">0</th>
+			</tr>
+			<tr>
+			<td>AC</td>
+			<td>+/-</td>
+			<td>%</td>
+			<td>/</td>
+			</tr>
+			<tr>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>*</td>
+			</tr>
+			<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>+</td>
+			</tr>
+			<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>-</td>
+			</tr>
+			<tr>
+			<td colSpan="2">0</td>
+			<td>,</td>
+			<td>=</td>
+			</tr>
+			</tbody>
+			</table>
 			</div>
 		);
 	}

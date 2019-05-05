@@ -1,6 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+    	font-family: 'Montserrat', sans-serif;
+}
+
 td {
 	width: 3em;
 	height: 3em;
+}
+
+.H1 {
+	font-size: 3em;
 }
 
 .Orange {
@@ -32,6 +42,7 @@ td {
 }
 
 .Calculator {
+	margin-top: 2em;
 	background-color: #777;
 	max-width: 12em;
 	width: 12em;

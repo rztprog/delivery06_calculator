@@ -1,22 +1,16 @@
 import React from 'react';
 import './Calculator.css'
 
-// let previous = [0];
-// let previousJoin = previous.join("");
-
-// let next = [0];
-// let nextJoin = next.join("");
-
 function sum(a, b){
-	return +a + +b;
+	return +b + +a;
 }
 
 function sub(a, b){
-	return +a - +b;
+	return +b - +a;
 }
 
 function mult(a, b){
-	return +a * +b;
+	return +b * +a;
 }
 
 function div(a, b){
@@ -24,14 +18,14 @@ function div(a, b){
 }
 
 function mod(a, b){
-	return +a % +b;
+	return Math.round(+b / +a);
 }
 
 class Calculator extends React.Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			result: [0].join(""),
+			result: 0,
 			first: [],
 			second: [],
 			last: [],
@@ -132,15 +126,15 @@ class Calculator extends React.Component {
 	}
 
 	acButton() {
-		this.state.second = [];
-		this.state.first = [];
-		this.state.div = 0;
-		this.state.mod = 0;
-		this.state.sub = 0;
-		this.state.mult = 0;
-		this.state.sum = 0;
 		this.setState({
-			result: (this.state.first.join("").length == 0) ? 0 : this.state.first.join(""),
+			second: [],
+			first: [],
+			div: 0,
+			mod: 0,
+			sub: 0,
+			mult: 0,
+			sum: 0,
+			result: 0,
 		});
 	}
 
@@ -148,11 +142,11 @@ class Calculator extends React.Component {
 		if(this.state.second.length > 0){
 			if(this.state.mult > 0){
 				this.setState({
-					result: mult(this.state.first.join(""), this.state.second.join(""))
+					result: mult(this.state.result, this.state.second.join(""))
 				});
 			}else if(this.state.sum > 0){
 				this.setState({
-					result: sum(this.state.first.join(""), this.state.second.join(""))
+					result: sum(this.state.result, this.state.second.join(""))
 				});
 				
 			}else if(this.state.sub > 0){
@@ -174,9 +168,11 @@ class Calculator extends React.Component {
 
 	multButton() {
 		if(this.state.first.length > 0){
-			this.state.second = this.state.first;
-			this.state.first = [];
-			this.state.result = 0;
+			this.setState({
+				second: this.state.first,
+				first: [],
+				result: 0
+			});
 		}
 		this.setState({
 			mult: 1,
@@ -189,9 +185,11 @@ class Calculator extends React.Component {
 
 	sumButton() {
 		if(this.state.first.length > 0){
-			this.state.second = this.state.first;
-			this.state.first = [];
-			this.state.result = 0;
+			this.setState({
+				second: this.state.first,
+				first: [],
+				result: 0
+			});
 		}
 		this.setState({
 			mult: 0,
@@ -204,9 +202,11 @@ class Calculator extends React.Component {
 
 	subButton() {
 		if(this.state.first.length > 0){
-			this.state.second = this.state.first;
-			this.state.first = [];
-			this.state.result = 0;
+			this.setState({
+				second: this.state.first,
+				first: [],
+				result: 0
+			});
 		}
 		this.setState({
 			mult: 0,
@@ -219,9 +219,11 @@ class Calculator extends React.Component {
 
 	divButton() {
 		if(this.state.first.length > 0){
-			this.state.second = this.state.first;
-			this.state.first = [];
-			this.state.result = 0;
+			this.setState({
+				second: this.state.first,
+				first: [],
+				result: 0
+			});
 		}
 		this.setState({
 			mult: 0,
@@ -234,9 +236,11 @@ class Calculator extends React.Component {
 
 	modButton() {
 		if(this.state.first.length > 0){
-			this.state.second = this.state.first;
-			this.state.first = [];
-			this.state.result = 0;
+			this.setState({
+				second: this.state.first,
+				first: [],
+				result: 0
+			});
 		}
 		this.setState({
 			mult: 0,
@@ -250,7 +254,7 @@ class Calculator extends React.Component {
 	render() {
 		return (
 			<div>
-			<h1>iOS-Like Calculator</h1>
+			<h1 className="H1">iOS-Like Calculator</h1>
 			<div className="Calculator">
 			<table cellSpacing="1">
 			<tbody>

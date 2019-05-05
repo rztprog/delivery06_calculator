@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/delivery06_calculator/static/css/main.d532416b.chunk.css",
+    "main.js": "/delivery06_calculator/static/js/main.f61edafb.chunk.js",
+    "main.js.map": "/delivery06_calculator/static/js/main.f61edafb.chunk.js.map",
+    "runtime~main.js": "/delivery06_calculator/static/js/runtime~main.bb16f194.js",
+    "runtime~main.js.map": "/delivery06_calculator/static/js/runtime~main.bb16f194.js.map",
+    "static/js/2.4e81ba5b.chunk.js": "/delivery06_calculator/static/js/2.4e81ba5b.chunk.js",
+    "static/js/2.4e81ba5b.chunk.js.map": "/delivery06_calculator/static/js/2.4e81ba5b.chunk.js.map",
+    "index.html": "/delivery06_calculator/index.html",
+    "precache-manifest.e22d498af3e3cd2c7b2b0aa38eff4555.js": "/delivery06_calculator/precache-manifest.e22d498af3e3cd2c7b2b0aa38eff4555.js",
+    "service-worker.js": "/delivery06_calculator/service-worker.js",
+    "static/css/main.d532416b.chunk.css.map": "/delivery06_calculator/static/css/main.d532416b.chunk.css.map"
+  }
+}
